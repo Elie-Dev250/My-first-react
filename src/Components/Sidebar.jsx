@@ -11,6 +11,7 @@ function Sidebar() {
           <li><Link to="/more">More info..</Link></li>
           
           
+          
         </ul>
     </div>
   )
