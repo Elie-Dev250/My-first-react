@@ -8,7 +8,9 @@ function Sidebar() {
           <li><Link to="/not">Notification</Link></li>
           <li><Link to="/vlog">Personal vlog</Link></li>
           <li><Link to="/content">New content</Link></li>
-          <li><Link to="/more">More info..</Link></li>
+          <li><Link to="/shop">Shop now</Link></li>
+          
+
           
           
           
