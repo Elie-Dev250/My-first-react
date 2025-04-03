@@ -456,3 +456,7 @@ button:hover {
 }
 
 
+.clock span{
+  color: #04ef33;
+  font-size: 40px;
+}

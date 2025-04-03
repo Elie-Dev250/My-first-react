@@ -5,6 +5,8 @@ import d3 from '../assets/d3.webp';
 import d5 from '../assets/d5.webp';
 import d6 from '../assets/d6.webp';
 import d2 from '../assets/d2.webp';
+import b1 from '../assets/b1.jpg';
+
 import '/src/index.css';
 
 function Shop() {
@@ -47,6 +49,11 @@ function Shop() {
     <div className='im1'>
       <img src={d2} alt=""/>
       <p>This is picture 6</p>
+    </div>
+
+    <div className='im1'>
+      <img src={b1} alt=""/>
+      <p>This is picture 7</p>
     </div>
 </div>
       </div>

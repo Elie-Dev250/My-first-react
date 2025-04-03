@@ -9,7 +9,9 @@ const Signup = () => {
     username: '',
     password: '',
     gender: '',
-    phone: ''
+    phone: '',
+    age:''
+
   });
 
   const handleChange = (e) => {
@@ -85,7 +87,14 @@ const Signup = () => {
             value={formData.phone}
             onChange={handleChange}
             required
+            placeholder='+250'
           />
+          <input type="number"
+          value={formData.age}
+          name='age'
+          placeholder='enter your age'
+          onChange={handleChange}
+           />
         </div>
 
         <button onClick={() => navigate('/home', { replace: true })}>

@@ -16,6 +16,7 @@ function App() {
     <>
     <div className='all'>
       <Navbar />
+      
      
       
 
@@ -31,6 +32,8 @@ function App() {
           <Route path="/shop" element={<Shop />} />
         </Routes>
       </div>
+
+      
       <Footer/>
 
       </div>
