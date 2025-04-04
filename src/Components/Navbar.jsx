@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
+
 function Navbar() {
   const navigate = useNavigate();
 
@@ -12,6 +13,7 @@ function Navbar() {
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/profile">Profile</Link></li>
+       
           
           
         </ul>

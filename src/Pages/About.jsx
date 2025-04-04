@@ -16,7 +16,9 @@ function About() {
          The platform features a user-friendly  <br />
          interface with forums, a resource library, an event calendar,  <br />
          and a support system, ensuring seamless interaction between students and administrators</p>
+         <h2>hello javascrip</h2>
       </div>
+      
     </div>
   )
 }

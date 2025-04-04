@@ -1,7 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import {  useNavigate } from 'react-router-dom';
 
+
 const Signup = () => {
+
+  
 
       const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -103,6 +106,10 @@ const Signup = () => {
         <p>Allready have an account?</p>
        <button onClick={()=>navigate('/login',{replace:true})}>Login</button>
       </form>
+
+      <div>
+        <h1>hello again{username}</h1>
+      </div>
     </div>
   );
 };

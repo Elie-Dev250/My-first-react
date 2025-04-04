@@ -11,6 +11,8 @@ import Login from './Pages/Login';
 import Footer from './Pages/Footer';
 import Shop from './Components/Shop';
 
+
+
 function App() {
   return (
     <>
@@ -30,8 +32,14 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/shop" element={<Shop />} />
+         
+
         </Routes>
+
+       
       </div>
+     
+
 
       
       <Footer/>
