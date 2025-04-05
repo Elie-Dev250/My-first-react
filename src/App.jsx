@@ -10,6 +10,8 @@ import Login from './Pages/Login';
 
 import Footer from './Pages/Footer';
 import Shop from './Components/Shop';
+import Newcontent from './Pages/Newcontent';
+import Personalvlog from './Pages/Personalvlog';
 
 
 
@@ -32,6 +34,9 @@ function App() {
           <Route path='/signup' element={<Signup />} />
           <Route path="/login" element={<Login />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/content" element={<Newcontent />} />
+          <Route path="/personal" element={<Personalvlog />} />
+
          
 
         </Routes>

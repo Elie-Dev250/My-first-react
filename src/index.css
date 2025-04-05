@@ -460,3 +460,143 @@ button:hover {
   color: #04ef33;
   font-size: 40px;
 }
+
+
+.hello{
+  color: wheat;
+}
+
+
+
+.data {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #19a2b4a0;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px #0000001a;
+  text-align: center;
+}
+
+
+.data h2 {
+  margin-bottom: 20px;
+  color: #0c6bf1;
+  font-size: 22px;
+  font-weight: 50px;
+  font-weight: bolder;
+}
+
+.data form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.data input {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #114086;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.data input:focus {
+  border-color: #e90808;
+}
+
+
+.data button[type='submit'] {
+  background-color: #ed3bf6;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.data button[type='submit']:hover {
+  background-color: #24d82d;
+}
+
+
+
+
+.vlogs {
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.vlogs h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #1e293b;
+}
+
+.vlogs form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.vlogs input {
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.vlogs input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.vlogs button[type='submit'] {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vlogs button[type='submit']:hover {
+  background-color: #2563eb;
+}
+
+.vlogs p {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.vlogs p button {
+  background: none;
+  color: #2563eb;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+  padding-left: 5px;
+}
+  .fullname{
+ 
+    
+  }
+
+
+
