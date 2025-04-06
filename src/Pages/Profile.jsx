@@ -39,6 +39,7 @@ function Profile() {
     </div>
 
     <Myprofile/>
+    
     </div>
   )}
 

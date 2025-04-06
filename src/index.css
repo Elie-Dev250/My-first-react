@@ -65,7 +65,14 @@ h1 {
   padding: 15px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 20px; 
 }
+
+
 
 .navbar ul {
   list-style: none;
@@ -593,10 +600,50 @@ button:hover {
   font-size: 14px;
   padding-left: 5px;
 }
-  .fullname{
  
-    
-  }
+ .container1{
+  max-width: 420px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  text-align: center;
+ }
+
+
+ .container1 form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container1 button[type='submit'] {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.container1 button[type='submit']:hover {
+  background-color: #25eb5d;
+}
+
+
+
+.container{
+ 
+  margin-top: 1.8cm;
+}
+
+
+
 
 
 

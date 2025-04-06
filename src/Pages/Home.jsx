@@ -1,7 +1,8 @@
 import React from 'react';
 import Sidebar from '../Components/Sidebar';
+
 import d2 from '../assets/d2.webp'; 
-import { Routes,Route } from 'react-router-dom';
+
 function Home() {
 
   
@@ -12,6 +13,7 @@ function Home() {
 
         <div className='type'>
       <Sidebar />
+      
       
      
       
