@@ -646,4 +646,86 @@ button:hover {
 
 
 
+.tasks {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tasks h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tasks input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.add-button {
+  padding: 10px 16px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.add-button:hover {
+  background-color: #218838;
+}
+
+ol {
+  list-style: decimal inside;
+  padding: 0;
+  margin-top: 30px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
+}
+
+.task2 {
+  flex-grow: 1;
+  text-align: left;
+  color: #333;
+}
+
+.delete {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  font-size: 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.delete:hover {
+  background-color: #c82333;
+}
+
+
+
 

@@ -1,116 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Todolist = () => {
+  const [tasks, settask] = useState(() => {
+   
+    const savedTasks = localStorage.getItem("tasks");
+    return savedTasks ? JSON.parse(savedTasks) : ["task1", "task2", "task3"];
+  });
 
-  const [islogin,setislogin]=useState(true)
+  const [newtask, setnewtask] = useState("");
 
-  const [formdata,setformdata]=useState({
-    username:'',
-    phone:'',
-    location:'',
-    email:'',
-    password:''
-  })
 
-  const handleChange=(event)=>{
-    setformdata({...formdata,[event.target.name]:event.target.value});
-}
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
-    const handleSubmit=(event)=>{
-event.preventDefault();
+  function handleChange(event) {
+    setnewtask(event.target.value);
+  }
+
+  function addtask() {
+    if (newtask.trim() !== "") {
+      settask((prevTasks) => [...prevTasks, newtask]);
+      setnewtask("");
     }
+  }
 
+  function removetask(index) {
+    const updatedtask = tasks.filter((_, i) => i !== index);
+    settask(updatedtask);
+  }
 
-    if(islogin){
-      console.log("user is logged in with ",formdata)
-    } else{
-      console.log("user is in signup with ",formdata)
-    }
-  
-
-
-
-  return(
+  return (
     <>
-
-<div className='data'>
-
-  <h2>{islogin? 'Login the account':"Signup the account"}</h2>
-
-  <form onSubmit={handleSubmit}>
-
-
-    {!islogin && (
-      <div>
-      <input 
-      type='text'
-      name='username'
-      value={formdata.username}
-      placeholder='username'
-      onChange={handleChange}
-      required/>
-      <input type="text"
-      name='phone'
-      placeholder='+250-XX-XXX-XXXX'
-      value={formdata.phone}
-      onChange={handleChange}
-       />
-
-      <input type="text" 
-      name='location'
-      placeholder='locatio'
-      value={formdata.location}
-      onChange={handleChange}
-      required
-       />
-      </div>
-      
-
-
-      
-    )}
-
-    <input type="email" 
-    name='email'
-    value={formdata.email}
-    placeholder='email'
-    required
-    onChange={handleChange}
-
-     />
-
-     <input type="password"
-     name='password'
-     value={formdata.password}
-     placeholder='password'
-     onChange={handleChange}
-     required />
-     
-
-
-<button type='submit'>{islogin? "Login":"Signup"}</button>
-  </form>
-  
-  <p style={{ marginTop: '15px' }}>
-        {islogin ? "Don't have an account?" : 'Already have an account?'}{' '}
-        <button
-          onClick={() => setislogin(!islogin)}
-          style={{
-            background: 'none',
-            color: 'blue',
-            border: 'none',
-            cursor: 'pointer',
-            textDecoration: 'underline'
-          }}
-        >
-          {islogin ? 'Sign Up' : 'Login'}
+      <div className='tasks'>
+        <h1>TodoList App</h1>
+        <input
+          type="text"
+          placeholder='Add tasks here...'
+          value={newtask}
+          onChange={handleChange}
+        />
+        <button className='add-button' onClick={addtask}>
+          Add
         </button>
-      </p>
-</div>
+      </div>
 
+      <ol>
+        {tasks.map((task, index) => (
+          <li key={index}>
+            <span className='task2'>{task}</span>
+            <button className='delete' onClick={() => removetask(index)}>
+              Delete
+            </button>
+          </li>
+        ))}
+      </ol>
     </>
-  )
- 
+  );
 };
 
 export default Todolist;
