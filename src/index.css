@@ -726,6 +726,134 @@ li {
   background-color: #c82333;
 }
 
+.but{
+  color: wheat;
+  font-size: 30px;
+}
+
+.part1{
+color: whitesmoke;
+  margin-top: 3cm;
+}
+.part1 input{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  margin-right: 10px;
+
+}
+
+
+
+.switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  color: rgb(254, 254, 254);
+}
+
+.switch {
+  width: 60px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switch.on {
+  background-color: #4caf50;
+}
+
+.switch.off {
+  background-color: #da1818;
+}
+
+.slider {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgb(217, 135, 135);
+  position: absolute;
+  top: 1px;
+  transition: transform 0.3s ease;
+}
+
+.switch.on .slider {
+  transform: translateX(30px);
+}
+
+.switch.off .slider {
+  transform: translateX(0);
+}
+
+.label {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+
+
+.calculator {
+  width: 320px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: right;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.buttonss {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+ .buttonss button{
+  font-size: 20px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+ .buttonss button:hover {
+  background-color: #18bec4;
+}
+
+ .buttonss button:active {
+  background-color: #eb1616;
+}
+
+ .buttonss button {
+  background-color: #d96cf7;
+  color: white;
+}
 
 
 

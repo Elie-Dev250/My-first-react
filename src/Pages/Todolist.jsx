@@ -1,6 +1,18 @@
 import React, { useState, useEffect } from 'react';
 
 const Todolist = () => {
+
+  const [count,setcount]=useState(0)
+  const handledecrease=()=>{
+    if(count>0){
+      setcount(count-1)
+    }
+  }
+  useEffect(()=>{
+console.log("count changed ",count)
+  },[])
+
+  
   const [tasks, settask] = useState(() => {
    
     const savedTasks = localStorage.getItem("tasks");
@@ -55,6 +67,17 @@ const Todolist = () => {
           </li>
         ))}
       </ol>
+
+      <div className='but'>
+
+        <h4 > count:{count}</h4>
+        <button onClick={()=>setcount(count+1)}>Add1</button><br />
+        <button onClick={handledecrease}>Decrease1</button>
+
+        <button onClick={()=>setcount(count+10)}>Add10</button><br />
+        <button onClick={()=>setcount(count-10)}>decreaseby10</button><br />
+        <button onClick={()=>setcount(0)}>Reset</button>
+      </div>
     </>
   );
 };
